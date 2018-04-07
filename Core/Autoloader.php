@@ -48,6 +48,7 @@ class Autoloader
         $classFolder = $namespace;
 
         $classPath = $this->basePath .'\\' . $classFolder . '\\' . $className . '.php';
+
         if(file_exists($classPath)) {
             return require_once $classPath;
         }
